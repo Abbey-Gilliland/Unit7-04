@@ -8,7 +8,7 @@ function price () {
   age = document.getElementById('your-age').value
   age = parseInt(age)
   day = document.getElementById('day-of-the-week').value
-  //If the age is below 5 or above 95, then the museum visit is for free. If the age is above 12 and below 21, AND the day is either thursday or tuesday, then the student discount applies. If none of those requirements are fufilled, then the full admission must be payed.
+  // If the age is below 5 or above 95, then the museum visit is for free. If the age is above 12 and below 21, AND the day is either thursday or tuesday, then the student discount applies. If none of those requirements are fufilled, then the full admission must be payed.
   if (age <= 5 || age >= 95) {
     document.getElementById('answer').innerHTML = 'You can go into the museum for free on any day!'
   } else if (age >= 12 && age <= 21 && (day === 'tuesday' || day === 'thursday')) {
